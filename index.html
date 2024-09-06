@@ -15,29 +15,33 @@
         <div id="launchForm">
             <form data-testid="testForm">
                 <div class="formField">
-                    <label>Pilot Name <input type="text" name="pilotName" id="pilotName"/></label>
+                    <label for="pilotName">Pilot Name</label> 
+                    <input type="text" name="pilotName" id="pilotName" />
                 </div>
                 <div class="formField">
-                    <label>Co-pilot Name <input type="text" name="copilotName"/></label>
+                    <label for="copilotName">Co-pilot Name</label>
+                    <input type="text" name="copilotName" id="copilotName" />
                 </div>
                 <div class="formField">
-                    <label>Fuel Level (L) <input type="text" name="fuelLevel"/></label> 
+                    <label for="fuelLevel">Fuel Level (L)</label>
+                    <input type="text" name="fuelLevel" id="fuelLevel" /> 
                 </div>
                 <div class="formField">
-                    <label>Cargo Mass (kg) <input type="text" name="cargoMass"/></label>
+                    <label for="cargoMass">Cargo Mass (kg)</label>
+                    <input type="text" name="cargoMass" id="cargoMass" />
                 </div>
-                <button id="formSubmit">Submit</button>
+                <button id="formSubmit" type="submit">Submit</button>
             </form>
         </div>
         <div id="launchStatusCheck">
             <h2 id="launchStatus" data-testid="launchStatus">Awaiting Information Before Launch</h2>
             <div id="faultyItems" style="visibility: hidden">
-                <ol>
+                <dl>
                     <li id="pilotStatus" data-testid="pilotStatus">Pilot Ready</li>
                     <li id="copilotStatus" data-testid="copilotStatus">Co-pilot Ready</li>
                     <li id="fuelStatus" data-testid="fuelStatus">Fuel level high enough for launch</li>
                     <li id="cargoStatus" data-testid="cargoStatus">Cargo mass low enough for launch</li>
-                </ol>
+                </dl>
             </div>
         </div>
     </body>

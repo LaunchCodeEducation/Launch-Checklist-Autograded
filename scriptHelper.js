@@ -13,7 +13,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
                      <li>Distance from Earth: </li>
                      <li>Number of Moons: </li>
                  </ol>
-                 <img src="">
+                 <img src="" alt="Picture of ${name}">
     */
  }
  
